@@ -6,38 +6,38 @@ const FeasibilitySection: React.FC = () => {
   const feasibilityFactors = [
     {
       title: "Textile Industry Presence",
-      description: "Tunisia has a strong textile industry with over 1,600 companies producing significant wastewater.",
+      description: "Tunisia hosts over 1,600 textile factories producing 22 million m³ of wastewater annually, offering ample opportunity for system deployment.",
       score: 9,
       icon: <Check className="text-green-500 w-6 h-6" />
     },
     {
       title: "Water Scarcity",
-      description: "Tunisia faces severe water scarcity issues, making water recycling solutions highly valuable.",
+      description: "With a 71% water stress index, Tunisia urgently needs efficient water reuse solutions like AquaVolt's Rankine cycle integration.",
       score: 10,
       icon: <Check className="text-green-500 w-6 h-6" />
     },
     {
       title: "Renewable Energy Goals",
-      description: "Tunisia aims to increase renewable energy to 30% by 2030, creating policy support.",
+      description: "Tunisia's target to reach 30% renewable energy by 2030 aligns with the project's clean energy generation.",
       score: 8,
       icon: <Check className="text-green-500 w-6 h-6" />
     },
     {
       title: "Technical Expertise",
-      description: "Access to engineering talent in thermodynamics and water treatment.",
+      description: "Local availability of engineers and researchers in thermodynamics, water treatment, and industrial process integration.",
       score: 7,
       icon: <Check className="text-green-500 w-6 h-6" />
     },
     {
       title: "Initial Investment Costs",
-      description: "Higher upfront costs require strategic financing or partnerships.",
-      score: 5,
+      description: "Initial CAPEX of 1.05M TND may pose a challenge, but 34.8% grant coverage significantly lowers the barrier.",
+      score: 6,
       icon: <AlertTriangle className="text-yellow-500 w-6 h-6" />
     },
     {
       title: "Regulatory Framework",
-      description: "Environmental regulations support the project but permit processes can be lengthy.",
-      score: 6,
+      description: "Environmental policies and grant programs (SUNREF, REFAT, GIZ) support the project; however, administrative delays may occur.",
+      score: 7,
       icon: <Check className="text-green-500 w-6 h-6" />
     }
   ];
@@ -48,7 +48,7 @@ const FeasibilitySection: React.FC = () => {
     { label: "Textile Wastewater", value: "22 million", unit: "m³ annually" },
     { label: "Energy Import Dependency", value: "97%", unit: "of energy needs" },
     { label: "Renewable Energy Target", value: "30%", unit: "by 2030" },
-    { label: "Water Reuse Potential", value: "85%", unit: "recovery rate" }
+    { label: "Water Reuse Potential", value: "83%", unit: "recoverable volume" }
   ];
 
   return (
@@ -112,12 +112,12 @@ const FeasibilitySection: React.FC = () => {
                 <h4 className="font-semibold mb-2">Overall Feasibility Score</h4>
                 <div className="flex items-center">
                   <div className="w-full h-3 bg-blue-700 rounded-full mr-2">
-                    <div className="h-full rounded-full bg-green-400" style={{ width: '75%' }}></div>
+                    <div className="h-full rounded-full bg-green-400" style={{ width: '76%' }}></div>
                   </div>
-                  <span className="font-bold text-xl">7.5/10</span>
+                  <span className="font-bold text-xl">7.6/10</span>
                 </div>
                 <p className="mt-2 text-sm text-blue-200">
-                  Highly feasible with strategic planning and proper investment
+                  The project is highly feasible with coordinated investment, grant utilization, and efficient permitting.
                 </p>
               </div>
             </div>
@@ -126,10 +126,10 @@ const FeasibilitySection: React.FC = () => {
               <h4 className="font-semibold mb-4">Implementation Timeline</h4>
               <div className="space-y-3">
                 {[
-                  { phase: "Pilot Project", time: "6-8 months" },
-                  { phase: "Regulatory Approval", time: "3-4 months" },
-                  { phase: "Full System Installation", time: "8-12 months" },
-                  { phase: "Testing & Optimization", time: "2-3 months" },
+                  { phase: "Pilot Project", time: "6–8 months" },
+                  { phase: "Regulatory Approval", time: "3–4 months" },
+                  { phase: "Full System Installation", time: "8–12 months" },
+                  { phase: "Testing & Optimization", time: "2–3 months" },
                   { phase: "Full Operation", time: "Ongoing" }
                 ].map((item, index) => (
                   <div key={index} className="flex justify-between">
@@ -139,7 +139,7 @@ const FeasibilitySection: React.FC = () => {
                 ))}
               </div>
               <p className="mt-4 text-sm text-gray-600 italic">
-                Total expected time from initiation to operation: 19-27 months
+                Total expected time from initiation to operation: 19–27 months
               </p>
             </div>
           </div>
